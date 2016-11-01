@@ -1,5 +1,15 @@
 import ffmpy
+import youtube_dl
 
+
+def download_video(url, output):
+    ydl_opts = {
+        'format': 'bestvideo',
+        'quiet': True,
+        'outtmpl': output
+    }
+    with youtube_dl.YoutubeDL(ydl_opts) as ydl:
+        ydl.download([url])
 
 def crop(in_path, out_path, start_time, duration_time):
     """

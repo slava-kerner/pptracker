@@ -5,6 +5,12 @@ from src.utils import video
 
 
 class TestVideo(unittest.TestCase):
+    def test_download(self):
+        url = 'https://www.youtube.com/watch?v=oYKmvwGmBVY'
+        out_path = 'output/track2.mp4'
+        video.download_video(url, out_path)
+
+
     def test_crop(self):
         in_path = 'tests/data/track.mp4'
         out_path = 'output/track.mp4'
