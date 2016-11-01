@@ -1,8 +1,9 @@
 import unittest
 
-from src.tracker import Tracker
+# from src.tracker import Tracker
+from src.tracker_ball import TrackerBall
 
-
-class TestTracker(unittest.TestCase):
+# @unittest.skip('')
+class TestTrackerBall(unittest.TestCase):
     def test_show(self):
-        Tracker().run('tests/data/track.mp4', 'output/tracks.avi')
+        TrackerBall().run('tests/data/track2.mp4', 'output/tracks2.avi')
