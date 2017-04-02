@@ -4,6 +4,7 @@ import filecmp
 from src.utils import video
 
 
+@unittest.skip('')
 class TestVideo(unittest.TestCase):
     def test_download(self):
         url = 'https://www.youtube.com/watch?v=oYKmvwGmBVY'
